@@ -43,6 +43,7 @@ img {
 .navbar-social-media {
     position: relative;
     display: flex;
+    gap: 5px;
 }
 
 .navbar-social-media .sm-btn {
@@ -52,6 +53,7 @@ img {
     place-items: center;
     width: 30px;
     height: 30px;
+    transition: 0.2s;
 }
 
 .navbar-social-media .sm-btn i {
@@ -60,22 +62,31 @@ img {
 
 .navbar-social-media .sm-btn:hover {
     transform: rotate(360deg);
-    border: 1px solid;
     background: white;
+    border: 2px solid;
+}
+
+.navbar-social-media .sm-btn:hover.btn-fb {
+    border: 2px solid #3a5692;
 }
 
 .navbar-social-media .sm-btn:hover.btn-fb i {
-    border-color: #4154a4;
     color: #3a5692;
 }
 
+.navbar-social-media .sm-btn:hover.btn-twt {
+    border: 2px solid #009fb0;
+}
+
 .navbar-social-media .sm-btn:hover.btn-twt i {
-    border-color: #009fb0;
     color: #52a5e3;
 }
 
+.navbar-social-media .sm-btn:hover.btn-ig {
+    border: 2px solid #e80000;
+}
+
 .navbar-social-media .sm-btn:hover.btn-ig i {
-    border-color: #e80000;
     color: #ff0000;
 }
 
@@ -83,6 +94,7 @@ img {
     background: #ffffff !important;
     transition: 0.5s all ease;
 }
+
 /*navbar sosyal medya icon son*/
 
 #hakkinda .hakkindatext{
@@ -91,7 +103,7 @@ img {
 
 #hakkinda{
     overflow: hidden;
-    padding: 30px;
+    padding: 30px 0;
     background: white;
 }
 #hakkinda .hakkindaimg{
@@ -110,8 +122,7 @@ img {
     margin: auto;
 }
 
-/*
-slaydergalery*/
+/*slaydergalery*/
 
 .slaydergalery {
     box-sizing: border-box;
@@ -617,6 +628,8 @@ slaydergalery*/
 /* Üstteki slayder */
 
 #banner1x2 .owl-nav button {
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 50%;
     /*transform: translateY(-50%);*/
@@ -636,6 +649,11 @@ slaydergalery*/
 #banner1x2 .owl-nav i:hover {
     transform: scale(1.1);
     background: #727272;
+}
+
+#detaylibilgi-buton {
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
 }
 
 
@@ -802,7 +820,6 @@ slaydergalery*/
     overflow: visible;
     overflow-x: clip;
 }
-
 .projects.owl-carousel .image {
     transition: 0.4s all ease-in;
     position: relative;
@@ -812,11 +829,9 @@ slaydergalery*/
     flex-direction: column-reverse;
     display: flex;
 }
-
 .projects.owl-carousel .image.active {
     transform: scale(1.1);
 }
-
 .projects.owl-carousel .info {
     position: absolute;
     visibility: hidden;
@@ -831,11 +846,9 @@ slaydergalery*/
     padding: 20px 10px 10px;
     line-height: 20px;
 }
-
 .projects.owl-carousel .image.active .info {
     visibility: visible;
 }
-
 .projects.owl-carousel .svg {
     position: relative;
     width: 40px;
@@ -853,8 +866,7 @@ slaydergalery*/
     opacity: 50% !important;
 }
 
-/*Footer*/
-
+/* Footer */
 .footer{
     position: relative;
     margin-top: 80px;
@@ -881,7 +893,6 @@ slaydergalery*/
     justify-content: center;
     align-items: center;
 }
-
 .footer-wrapper {
     position: relative;
     width: 80%;
@@ -889,7 +900,6 @@ slaydergalery*/
     justify-content: space-between;
     border-bottom: 1px solid #7BC377;
 }
-
 .footer-menu {
     position: relative;
     width: 80%;
@@ -900,12 +910,10 @@ slaydergalery*/
     justify-content: space-evenly;
     border-top: 1px solid #7BC377;
 }
-
 .footer-logo {
     position: relative;
     width: 20%;
 }
-
 .footer-menu .menu-list {
     position: relative;
 }
@@ -913,27 +921,22 @@ slaydergalery*/
 .menu-list:not(:first-child) {
     margin-left: 40px;
 }
-
 .menu-list .list-container {
     position: relative;
     display: flex;
     justify-content: space-evenly;
 }
-
 .menu-list:nth-child(2) .list-container {
     display: flex;
     justify-content: space-around;
     gap: 40px;
 }
-
 .menu-list .list-header {
     text-transform: uppercase;
     color: #ffffff !important;
     padding: 0 10px 10px;
     border-bottom: 1px solid #7BC377;
 }
-
-
 .menu-list .list {
     color: #FFFFFF;
     list-style: none;
@@ -944,7 +947,6 @@ slaydergalery*/
 .list .list-item, .list-item.url {
     white-space: nowrap;
 }
-
 .list .list-item:not(.url)::before {
     position: relative;
     content: "\2666";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
@@ -953,19 +955,15 @@ slaydergalery*/
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
 }
-
 .list .list-item.url a {
     width: 90%;
 }
-
 .list .list-item.url i, .list-item.url img {
     width: 10%;
 }
-
 .list .list-item.url a {
     color: #ffffff;
 }
-
 .list .list-item.url a:hover, i {
     color: #7BC377;
 }
@@ -977,13 +975,14 @@ slaydergalery*/
     filter: grayscale(1);
 }
 
+
+/* Youtube section */
 .youtube {
     position: relative;
     width: 100%;
     margin-top: 100px;
     padding: 0 5%;
 }
-
 .youtube-header {
     position: relative;
     width: 100%;
@@ -991,12 +990,10 @@ slaydergalery*/
     align-items: center;
     gap: 20px;
 }
-
 .youtube-header .header-img {
     position: relative;
     width: 170px;
 }
-
 .youtube-header .header-text {
     position: relative;
     width: 100%;
@@ -1004,7 +1001,6 @@ slaydergalery*/
     gap: 10px;
     align-items: center;
 }
-
 .youtube-header .header-url {
     position: relative;
     color: #DA0000 !important;
@@ -1013,11 +1009,9 @@ slaydergalery*/
     align-items: center;
     gap: 5px;
 }
-
 .youtube-header .header-icon {
     color: #DA0000 !important;
 }
-
 .youtube-header .header-url::after {
     position: relative;
     content: "";
@@ -1026,20 +1020,18 @@ slaydergalery*/
     height: 1px;
     background: #DA0000;
 }
-
 .youtube-content {
     position: relative;
     width: 100%;
     padding: 5% 0;
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
     justify-content: center;
 }
-
 .youtube-video {
     position: relative;
-    width: 40%;
+    width: 30%;
     height: 200px;
     display: flex;
     align-items: center;
@@ -1047,7 +1039,6 @@ slaydergalery*/
     background-size: cover;
     border-radius: 10px;
 }
-
 .youtube-content .btn-wrapper {
     position: relative;
     /*padding: 15px;
@@ -1057,29 +1048,26 @@ slaydergalery*/
     cursor: pointer;
     opacity: 1!important;
 }
-
 .youtube-content .btn-wrapper:hover {
     transform: scale(1.1);
     background-color: #da0000;
 }
-
 .youtube-content .btn-wrapper .btn {
     position: relative;
     padding: 5px;
     /*border: 1px solid white;*/
     border-radius: 50%;
 }
-
 .youtube-content .btn .btn-icon {
     position: relative;
     width: 86px;
     height: 86px;
 }
-
 .youtube #youtube-modal .modal-body {
     padding: 0!important;
 }
 
+/* Basin aciklamalari */
 .conclusions {
     position: relative;
     width: 100%;
@@ -1088,7 +1076,6 @@ slaydergalery*/
     flex-direction: column;
     gap: 50px;
 }
-
 .conclusion {
     position: relative;
     width: 90%;
@@ -1123,12 +1110,11 @@ slaydergalery*/
     width: 80%;
 }
 
-/*Mustafa Dündar slayder css*/
+/* Mustafa Dündar slayder section */
 .banner-slider {
     width: 100%;
     height: 580px;
 }
-
 .banner-slider .banner-item {
     background: orange;
     width: 100%;
@@ -1137,7 +1123,6 @@ slaydergalery*/
     justify-content: center;
     align-items: center;
 }
-
 .banner-slider .owl-nav {
     position: absolute;
     top: 42%;
@@ -1146,12 +1131,10 @@ slaydergalery*/
     display: flex;
     justify-content: space-between;
 }
-
 .banner-slider .owl-nav .owl-next,
 .banner-slider .owl-nav .owl-prev {
     border-radius: 50px !important;
 }
-
 .banner-slider .owl-nav .owl-next i,
 .banner-slider .owl-nav .owl-prev i {
     background-color: #fff;
@@ -1163,7 +1146,6 @@ slaydergalery*/
     line-height: 50px;
     border-radius: 50px;
 }
-
 .banner-slider .owl-dots {
     position: absolute;
     bottom: 30px;
@@ -1171,18 +1153,12 @@ slaydergalery*/
     display: flex;
     justify-content: center;
 }
-/*.banner-slider button span {
-    background:url(../images/icon/arrow4.png) no-repeat;
-    color: rgba(8, 30, 141, 0) !important;
-}*/
-
 .banner-slider .owl-dots .owl-dot span {
     background: #fff !important;
     border-radius: 100px;
     padding: 5px;
     opacity: .5;
 }
-
 .banner-slider .owl-dots .owl-dot.active span {
     padding: 5px 25px;
     opacity: 1;
@@ -1208,31 +1184,26 @@ slaydergalery*/
     justify-content: center;
     align-content: space-around;
 }
-
 .banner-slider .banner-item .content h1 {
     max-width: 550px;
     font-weight: 200;
     font-size: 40px;
     line-height: 45px;
 }
-
 .banner-slider .banner-item .content h1 strong {
     font-weight: 500;
 }
-
 .banner-slider .banner-item .content hr {
     background: rgba(255, 255, 255, 1);
     width: 50px;
     height: 4px;
     margin: 20px 0 0 0;
 }
-
 .banner-slider .banner-item .content p {
     max-width: 550px;
     font-weight: 500;
     margin: 20px 0;
 }
-
 .banner-slider .banner-item .content button {
     background: rgba(255, 255, 255, 1);
     width: 180px;
@@ -1246,7 +1217,6 @@ slaydergalery*/
     transition: 0.5s;
     cursor: pointer;
 }
-
 .banner-slider .banner-item .content button .icons {
     background: #111;
     width: 30px;
@@ -1259,21 +1229,17 @@ slaydergalery*/
     margin: 3px;
     float: right;
 }
-
 .banner-slider .banner-item .content button:hover {
     background: #3535f1;
     color: #fff;
 }
-
 .banner-slider .banner-item .content button:hover .icons {
     background: #fff;
     color: #111;
 }
-
 .banner-slider .banner-item .content .image {
     height: 600px;
 }
-
 @media(max-width:600px){
     .banner-slider{
 
@@ -1292,10 +1258,9 @@ slaydergalery*/
     .banner-slider .AB3{background-image: url('../images/mobilbanner.png') !important;}
     .banner-slider .banner-item .content{display:none;}
 }
-
 .banner-slider .banner-item .content h1 {
-    background: radial-gradient(rgb(0, 16, 161) 20%, transparent 100%);
-    border-left: 3px solid #1b2b5e;
+    /*background: radial-gradient(rgb(0, 16, 161) 20%, transparent 100%);
+    border-left: 3px solid #1b2b5e;*/
     color: #fff;
     padding: 20px;
     max-width: 450px;
@@ -1303,10 +1268,9 @@ slaydergalery*/
     font-size: 50px;
     line-height: 45px;
 }
-
 .banner-slider .banner-item .content p {
     background:rgba(71, 71, 71, 0.589);
-    border-left: 2px solid #0524be;
+    /*border-left: 2px solid #0524be;*/
     padding: 15px;
     max-width: 550px;
     font-weight: 500;
@@ -1316,7 +1280,7 @@ slaydergalery*/
     overflow: hidden;
 }
 
-/*Mustafa Dündar Sosyal medya*/
+/* Mustafa Dündar Sosyal medya */
 #social .container_wrap .social_box {
     position: relative;
     background-position: center !important;
@@ -1454,7 +1418,7 @@ Haberler slayder ufuk*/
 #point {
     width: 100%;
     height: auto;
-    
+
   }
   #point .top_point {
     width: 100%;
@@ -1506,14 +1470,14 @@ Haberler slayder ufuk*/
     border-radius: 0;
   }
   #point .bottom_point .container_wrap .point_box img {
-    width: 100px;
+    width: 135px;
     height: auto;
-    transform: translateY(-13%);
+    transform: translateY(-11%);
     transition: transform 0.5s;
   }
-  
+
   #point .bottom_point .container_wrap .point_box p {
-    min-width: 120px;
+    min-width: 140px;
     min-height: 44px;
     max-height: 44px;
     font-weight: 400;
