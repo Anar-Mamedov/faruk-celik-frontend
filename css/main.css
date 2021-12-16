@@ -1079,7 +1079,7 @@ img {
 .conclusion {
     position: relative;
     width: 90%;
-    border-bottom: 2px solid #7bc377;
+    /*border-bottom: 2px solid #7bc377;*/
     display: flex;
     align-items: flex-end;
 }
@@ -1107,7 +1107,7 @@ img {
 }
 .conclusion-img {
     position: relative;
-    width: 80%;
+    width: 90%;
 }
 
 /* Mustafa Dündar slayder section */
@@ -1555,3 +1555,31 @@ Haberler slayder ufuk*/
 }
 
 /*haberler slayder son*/
+
+/*Fotoğraflar slayder*/
+#fotografgalerisi .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 14px;
+    margin: -100px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50px
+}
+#fotografgalerisi .owl-nav button span {
+    font-size: 30px;
+    position: relative;
+    top: -2px;
+    color: #00ad06;
+}
+#fotografgalerisi .owl-nav button {
+    position: absolute;
+    top: 63%;
+/*transform: translateY(-50%);*/
+    background: rgb(255, 255, 255) !important;
+}
+#fotografgalerisi .owl-item img {
+    border-radius: 30px;
+}
+/*Fotoğraflar slayder son*/
