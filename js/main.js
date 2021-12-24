@@ -16,9 +16,8 @@
 
 })(jQuery);
 
-/*
-gallery slayder js script*/
-const cardsContainer = document.querySelector(".card-carousel");
+/*gallery slayder js script*/
+/*const cardsContainer = document.querySelector(".card-carousel");
 const cardsController = document.querySelector(".card-carousel + .card-controller")
 
 class DraggingEvent {
@@ -338,8 +337,9 @@ class CardCarousel extends DraggingEvent {
 	}
 }
 
-const carousel = new CardCarousel(cardsContainer)
+const carousel = new CardCarousel(cardsContainer)*/
 
+/*Projeler kısmı js kodu*/
 const newsPhotoCount = $('.projects.owl-carousel').children().length
 if (newsPhotoCount > 0) {
 	const svg = '<img class="svg" src="/images/Ellipse%2034.svg" alt="">'
