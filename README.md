@@ -1,3 +1,3 @@
 # faruk-celik-frontend
 
-You can access the website from this link. https://project.anarmamedov.com/
+You can access the website from this link. https://storied-kleicha-9d1e4a.netlify.app/
